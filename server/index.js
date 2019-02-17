@@ -78,6 +78,7 @@ app.post('/events/delete/:id',(req,res)=>{
 
 app.post('/events/update',(req,res)=>{
     console.log("update")
+    console.log(req.body)
     gedtUser(req.session.userid).then((user)=>{
         eventreq= req.body;
         console.log(eventreq._id);

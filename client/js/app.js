@@ -123,7 +123,7 @@ class EventManager {
         actualizarEvento(event){
             console.log("going to update")
             console.log(event)
-            let url= this.urlBase+"/update"
+            let url= "/events/update"
             console.log(url)
             $.post(url, event, (response) => {
                 console.log(response)

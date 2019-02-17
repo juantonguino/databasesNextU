@@ -121,6 +121,7 @@ class EventManager {
             })
         }
         actualizarEvento(event){
+            console.log("going to update")
             console.log(event)
             let url= this.urlBase+"/update"
             console.log(url)
